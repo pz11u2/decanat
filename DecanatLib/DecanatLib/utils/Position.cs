@@ -10,15 +10,5 @@ namespace DecanatLib.utils
          * зав.кафедры
          * ст.выкладач
         */
-    }
-
-    enum PositionGroup { 
-        /*
-         * магистры
-         * бакалавры
-         * специалисты
-         */
-    }
-
-    
+    }   
 }

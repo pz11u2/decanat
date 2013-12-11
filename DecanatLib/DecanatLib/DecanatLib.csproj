@@ -45,6 +45,7 @@
     <Compile Include="model\IGroup.cs" />
     <Compile Include="model\ITeacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="utils\PositionGroup.cs" />
     <Compile Include="utils\TimeScoupe.cs" />
     <Compile Include="utils\Position.cs" />
   </ItemGroup>
