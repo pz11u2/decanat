@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DecanatLib.utils;
 
 namespace DecanatLib.model
 {
     interface IDiscipline
     {
         //перечень предметов которые может вести препод
-        private String name; //название дисциплины
+        public String NameDiscipline { get; set; }
+        public TimeScoupe CountHours { get; set; }
+        
 
     }
 }

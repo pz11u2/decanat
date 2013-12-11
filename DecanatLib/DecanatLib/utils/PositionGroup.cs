@@ -7,10 +7,8 @@ namespace DecanatLib.utils
 {
     enum PositionGroup
     {
-        /*
-         * магистры
-         * бакалавры
-         * специалисты
-         */
+        Master, //магист
+        Bachelor, //бакалавр
+        Specialist //специалист
     }
 }

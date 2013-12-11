@@ -8,12 +8,12 @@ namespace DecanatLib.model
 {
     interface ITeacher
     {
-        private String first_name;
-        private String last_name;
-        private String second_name;
-        private Position position;
-        private Double price;//ставка 
-        private List<IDiscipline> disciplines;//перечень предметов которые может вести
-        private Double countHours;//колличество часов
+        public String FirstName{ get; set; }
+        public String LastName { get; set; }
+        public String SecondName { get; set; }
+        public Position PositionTeacher{ get; set; }
+        public Double Price{ get; set; }//ставка 
+        public List<IDiscipline> Disciplines{ get; set; }//перечень предметов которые может вести
+        public Double CountHours { get; set; }//колличество часов
     }
 }

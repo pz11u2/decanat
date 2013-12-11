@@ -8,9 +8,9 @@ namespace DecanatLib.utils
     class TimeScoupe//часы для предмета
     {
         //todo: конструкторы!
-        private Int32 hourLecture;//лекционные
-        private Int32 hourLaboratoyry;//лабораторные
-        private Int32 hourPractic;//практические
-        private Int32 hourSelf;//самостоятельное обучение
+        public Int32 HourLecture { get; set; } //лекционные
+        public Int32 HourLaboratory { get; set; }//лабораторные
+        public Int32 HourPractic { get; set; } //практические
+        public Int32 HourSelf{ get; set; }//самостоятельное обучение
     }
 }
