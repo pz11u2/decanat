@@ -11,7 +11,8 @@ namespace DecanatLib.model
         //перечень предметов которые может вести препод
         public String NameDiscipline { get; set; }
         public TimeScoupe CountHours { get; set; }
-        
-
+        public IGroup GroupName { get; set; }
+        public Byte WeeksCount { get; set; } //количество недель
+        public Byte Term { get; set; } //семестр
     }
 }

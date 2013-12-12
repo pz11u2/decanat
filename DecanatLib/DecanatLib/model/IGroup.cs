@@ -10,8 +10,8 @@ namespace DecanatLib.model
     {
         public Int32 CountStudents { get; set; }
         public String NameGpoup { get; set; }
-        public  PositionGroup ValuePositionGroup { get; set; } //
-        public String EducationForm{get;set;}
-        public byte Course{get;set;}
+        public PositionGroup ValuePositionGroup { get; set; } //
+        public String EducationForm { get; set; }
+        public Byte Course { get; set; }
     }
 }

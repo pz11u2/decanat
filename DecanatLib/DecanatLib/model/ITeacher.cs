@@ -12,8 +12,8 @@ namespace DecanatLib.model
         public String LastName { get; set; }
         public String SecondName { get; set; }
         public Position PositionTeacher{ get; set; }
-        public Double Price{ get; set; }//ставка 
+        public Double Rate{ get; set; }//ставка 
         public List<IDiscipline> Disciplines{ get; set; }//перечень предметов которые может вести
-        public Double CountHours { get; set; }//колличество часов
+        //public Double CountHours { get; set; }//колличество часов
     }
 }
