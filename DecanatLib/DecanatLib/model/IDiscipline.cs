@@ -8,6 +8,7 @@ namespace DecanatLib.model
 {
     interface IDiscipline
     {
+		//TODO: убрать автосвойства из абстракций
         //перечень предметов которые может вести препод
         public String NameDiscipline { get; set; }
         public TimeScoupe CountHours { get; set; }
