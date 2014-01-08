@@ -40,9 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="model\IDiscipline.cs" />
     <Compile Include="model\IGroup.cs" />
+    <Compile Include="model\impl\Discipline.cs" />
+    <Compile Include="model\impl\Teacher.cs" />
+    <Compile Include="utils\IndividualTask.cs" />
     <Compile Include="model\ITeacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="utils\PositionGroup.cs" />
@@ -50,7 +52,7 @@
     <Compile Include="utils\Position.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="model\impl\" />
+    <Folder Include="view\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

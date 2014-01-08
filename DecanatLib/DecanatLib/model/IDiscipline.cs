@@ -7,13 +7,24 @@ using DecanatLib.utils;
 namespace DecanatLib.model
 {
     interface IDiscipline
-    {
-		//TODO: убрать автосвойства из абстракций
+    {		
         //перечень предметов которые может вести препод
-        public String NameDiscipline { get; set; }
-        public TimeScoupe CountHours { get; set; }
-        public IGroup GroupName { get; set; }
-        public Byte WeeksCount { get; set; } //количество недель
-        public Byte Term { get; set; } //семестр
+        String getNameDiscipline();
+        //форма обучения
+        Char getFormOfEducation();
+        TimeScoupe getCountHours();
+        IGroup getGroup();
+        //количество недель
+        Byte getWeeksCount();
+        //семестр
+        Byte getTerm();
+        //поток          
+        String getThread();
+        // шифр специальности или кол-во потоков
+        String getChiphrOrThreadCount();
+        // виды индивидуальных заданий
+        IndividualTask getIndividualTasks();
+        // часы на самостоятельную работу
+        Int32 getIndividualWork();        
     }
 }
