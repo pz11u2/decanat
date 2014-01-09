@@ -6,7 +6,7 @@
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{679F08F3-95B6-4A82-BDBB-96EF66958CBC}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DecanatLib</RootNamespace>
     <AssemblyName>DecanatLib</AssemblyName>
@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,9 +31,16 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\FirstSimple\NHibernateSample\FirstSample\SharedLibs\NHibernate.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +52,11 @@
     <Compile Include="model\IGroup.cs" />
     <Compile Include="model\impl\Discipline.cs" />
     <Compile Include="model\impl\Teacher.cs" />
+    <Compile Include="service\impl\ModelService.cs" />
+    <Compile Include="service\IModelService.cs" />
+    <Compile Include="service\impl\TeacherService.cs" />
+    <Compile Include="service\ITeacherService.cs" />
+    <Compile Include="service\NHibernateHelper.cs" />
     <Compile Include="utils\IndividualTask.cs" />
     <Compile Include="model\ITeacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

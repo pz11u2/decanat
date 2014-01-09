@@ -14,6 +14,7 @@ namespace DecanatLib.model.impl
         private String secondName;
         private Position positionTeacher;
         private Double rate;
+        private TimeScoupe hours;
         //[OneToMany]
         private List<IDiscipline> disciplines;
         private Double hourEducationalWork;
@@ -67,6 +68,12 @@ namespace DecanatLib.model.impl
         public Double getHourEducationalWork()
         {
             return this.hourEducationalWork;
+        }
+
+
+        public TimeScoupe getHours()
+        {
+            return this.hours;
         }
     }
 }

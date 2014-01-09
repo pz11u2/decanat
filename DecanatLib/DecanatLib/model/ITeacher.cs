@@ -18,7 +18,7 @@ namespace DecanatLib.model
         //OneToMany(featch = Lazy)
         List<IDiscipline> getDisciplines();
         //часы
-        TimeScoupe hours;
+        TimeScoupe getHours();
         //public Double CountHours {();}//колличество часов
         //организационно-воспитательная работа
         Double getHourEducationalWork();

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using DecanatLib.utils;
+using System.Windows.Forms;
 
 namespace DecanatLib.model.impl
 {
@@ -90,6 +91,6 @@ namespace DecanatLib.model.impl
         public Int32 getIndividualWork()
         {
             return this.individualWork;
-        }
+        }        
     }
 }
