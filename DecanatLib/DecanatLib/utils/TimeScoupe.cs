@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DecanatLib.utils
 {
-    class TimeScoupe//часы для предмета
+    public class TimeScoupe//часы для предмета
     {
         //todo: конструкторы!
         public Double HourLecture { get; set; } //лекционные

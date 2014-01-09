@@ -8,6 +8,7 @@ namespace DecanatLib.service
 {
     public interface IModelService
     {
-        public void Add(Object obj);
+        void Add(Object obj);
+
     }
 }

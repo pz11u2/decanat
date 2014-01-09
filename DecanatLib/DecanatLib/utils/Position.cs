@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DecanatLib.utils
 {
-    enum Position
+    public enum Position
     {
         HeadOfDepartment, //завкафедры
         SeniorLecturer,  //старший преподаватель

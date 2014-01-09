@@ -6,7 +6,7 @@ using DecanatLib.utils;
 
 namespace DecanatLib.model
 {
-    interface IGroup
+    public interface IGroup
     {
         Int32 countStudents();        
         //Название группы (ПЗ-11у-1)

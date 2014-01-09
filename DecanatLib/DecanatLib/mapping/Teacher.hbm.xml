@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="DecanatLib"
+                   namespace="DecanatLib.model.impl">
+
+  <class name="Teacher">
+    <id name="Id">
+      <generator class="int" />
+    </id>
+    <property name="FirstName" />
+    <property name="lastName" />
+    <property name="secondName" />
+    <property name="positionTeacher" />
+    <property name="rate" />
+    <property name="hours" />
+    <property name="disciplines" /> 
+    <property name="hourEducationalWork" />
+
+  </class>
+</hibernate-mapping>

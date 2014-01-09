@@ -10,6 +10,13 @@ namespace DecanatLib.service
     public class NHibernateHelper
     {
         private static ISessionFactory _sessionFactory;
+        private static Object obj;
+
+        public static Object Obj
+        {
+            get { return obj; }
+            set { obj = value; }
+        }
 
         private static ISessionFactory SessionFactory
         {
@@ -19,7 +26,7 @@ namespace DecanatLib.service
                 {
                     var config = new Configuration();
                     config.Configure();
-                    //config.AddAssembly(typeof().Assembly);
+                    config.AddAssembly(obj.GetType().Assembly);
                     _sessionFactory = config.BuildSessionFactory();
                 }
                 return _sessionFactory;

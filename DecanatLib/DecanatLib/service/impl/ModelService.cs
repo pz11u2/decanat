@@ -10,6 +10,7 @@ namespace DecanatLib.service.impl
     {
         public void Add(Object obj)
         {
+            NHibernateHelper.Obj = obj;
             using (ISession session = NHibernateHelper.OpenSession())
             using (ITransaction transaction = session.BeginTransaction())
             {

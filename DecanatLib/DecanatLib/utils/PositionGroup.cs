@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DecanatLib.utils
 {
-    enum PositionGroup
+    public enum PositionGroup
     {
         Master, //магист
         Bachelor, //бакалавр

@@ -3,94 +3,52 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using DecanatLib.utils;
-using System.Windows.Forms;
 
 namespace DecanatLib.model.impl
 {
-    class Discipline:IDiscipline
+    public class Discipline
     {
-        private Int32 id;
-        private String nameDiscipline;
-        private Char formOfEducation;
-        private TimeScoupe countHours;
-        private IGroup group;
-        private Byte weekCount;
-        private Byte term;
-        private String thread;
-        private String chiphrOrThreadCount;
-        private IndividualTask individualTask;
-        private Int32 individualWork;
+         //перечень предметов которые может вести препод
+        public virtual String NameDiscipline{get;set;}
+        //форма обучения
+        public virtual Char FormOfEducation{get;set;}
+        public virtual TimeScoupe CountHours{get;set;}
+        public virtual Group Group{get;set;}
+        //количество недель
+        public virtual Byte WeekCount{get;set;}
+        //семестр
+        public virtual Byte Term{get;set;}
+        //поток          
+        public virtual String Thread{get;set;}
+        // шифр специальности или кол-во потоков
+        public virtual String ChiphrOrThreadCount{get;set;}
+        // виды индивидуальных заданий
+        public virtual IndividualTask IndividualTasks{get;set;}
+        // часы на самостоятельную работу
+        public virtual Int32 IndividualWork { get; set; }
 
         public Discipline(String nameDiscipline,
                           Char formOfEducation,
                           TimeScoupe countHours,
-                          IGroup group,
+                          Group group,
                           Byte weekCount,
                           Byte term,
                           String thread,
                           String chiphrOrThreadCount,
-                          IndividualTask individualTask,
+                          IndividualTask individualTasks,
                           Int32 individualWork) {
-                              this.nameDiscipline = nameDiscipline;
-                              this.formOfEducation = formOfEducation;
-                              this.countHours = countHours;
-                              this.group = group;
-                              this.weekCount = weekCount;
-                              this.term = term;
-                              this.thread = thread;
-                              this.chiphrOrThreadCount = chiphrOrThreadCount;
-                              this.individualTask = individualTask;
-                              this.individualWork = individualWork;
+                              NameDiscipline = nameDiscipline;
+                              FormOfEducation = formOfEducation;
+                              CountHours = countHours;
+                              Group = group;
+                              WeekCount = weekCount;
+                              Term = term;
+                              Thread = thread;
+                              ChiphrOrThreadCount = chiphrOrThreadCount;
+                              IndividualTasks = individualTasks;
+                              IndividualWork = individualWork;
         }
 
-        public String getNameDiscipline()
-        {
-            return this.nameDiscipline;
-        }
-
-        public Char getFormOfEducation()
-        {
-            return this.formOfEducation;
-        }
-
-        public TimeScoupe getCountHours()
-        {
-            return this.countHours;
-        }
-
-        public IGroup getGroup()
-        {
-            return this.group;
-        }
-
-        public Byte getWeeksCount()
-        {
-            return this.weekCount;
-        }
-
-        public Byte getTerm()
-        {
-            return this.term;
-        }
-
-        public String getThread()
-        {
-            return this.thread;
-        }
-
-        public String getChiphrOrThreadCount()
-        {
-            return this.chiphrOrThreadCount;
-        }
-
-        public IndividualTask getIndividualTasks()
-        {
-            return this.individualTask;
-        }
-
-        public Int32 getIndividualWork()
-        {
-            return this.individualWork;
-        }        
+       
     }
 }

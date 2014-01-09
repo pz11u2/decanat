@@ -3,24 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using DecanatLib.utils;
+using DecanatLib.model.impl;
 
 namespace DecanatLib.model
 {
-    interface ITeacher
+    public interface ITeacher
     {
-        String getFirstName();
-        String getLastName ();
-        String getSecondName ();
-        Position getPositionTeacher();
-        // ставка 
-        Double getRate();
-        //перечень предметов которые может вести
-        //OneToMany(featch = Lazy)
-        List<IDiscipline> getDisciplines();
-        //часы
-        TimeScoupe getHours();
-        //public Double CountHours {();}//колличество часов
-        //организационно-воспитательная работа
-        Double getHourEducationalWork();
+        Teacher getById(int id);
+        // TODO: 
+        // семантика поведений для преподавателя
     }
 }

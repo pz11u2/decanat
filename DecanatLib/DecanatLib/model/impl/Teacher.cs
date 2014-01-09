@@ -6,74 +6,32 @@ using DecanatLib.utils;
 
 namespace DecanatLib.model.impl
 {
-    class Teacher:ITeacher
+    public class Teacher
     {
-        private Int32 id;
-        private String firstName;
-        private String lastName;
-        private String secondName;
-        private Position positionTeacher;
-        private Double rate;
-        private TimeScoupe hours;
-        //[OneToMany]
-        private List<IDiscipline> disciplines;
-        private Double hourEducationalWork;
+        public virtual Guid Id { get; set; }
+        public virtual String FirstName { get; set; }
+        public virtual String SecondName { get; set; }
+        public virtual String Patronymic { get; set; }
+        public virtual Position PositionTeacher { get; set; }
+        public virtual Double Rate { get; set; }
+        public virtual TimeScoupe Hours { get; set; }
+        public virtual List<Discipline> Disciplines { get; set; }
+        public virtual Double HourEducationalWork { get; set; }
 
         public Teacher(String firstName,
-            String lastName,
             String secondName,
+            String patronymic,
             Position positionTeacher,
             Double rate,
-            List<IDiscipline> disciplines,
+            List<Discipline> disciplines,
             Double hourEducationalWork) {
-                this.firstName = firstName;
-                this.lastName = lastName;
-                this.secondName = secondName;
-                this.positionTeacher = positionTeacher;
-                this.rate = rate;
-                this.disciplines = disciplines;
-                this.hourEducationalWork = hourEducationalWork;
+                FirstName = firstName;
+                SecondName = secondName;
+                Patronymic = patronymic;
+                PositionTeacher = positionTeacher;
+                Rate = rate;
+                Disciplines = disciplines;
+                HourEducationalWork = hourEducationalWork;
         }
-        
-        public String getFirstName()
-        {
-            return this.firstName;
-        }
-
-        public String getLastName()
-        {
-            return this.lastName;
-        }
-
-        public String getSecondName()
-        {
-            return this.secondName;
-        }
-
-        public Position getPositionTeacher()
-        {
-            return this.positionTeacher;
-        }
-
-        public Double getRate()
-        {
-            return this.rate;
-        }
-
-        public List<IDiscipline> getDisciplines()
-        {
-            return this.disciplines;
-        }
-
-        public Double getHourEducationalWork()
-        {
-            return this.hourEducationalWork;
-        }
-
-
-        public TimeScoupe getHours()
-        {
-            return this.hours;
-        }
-    }
+    } 
 }

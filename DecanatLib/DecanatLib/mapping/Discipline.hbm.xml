@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="DecanatLib"
+                   namespace="DecanatLib">
+
+  <class name="Discipline">
+    <id name="id">
+      <generator class="int" />
+    </id>
+    <property name="nameDiscipline" />
+    <property name="formOfEducation" />
+    <property name="countHours" />
+    <property name="group" />
+    <property name="weekCount" />
+    <property name="term" />
+    <property name="thread" />
+    <property name="chiphrOrThreadCount" />
+    <property name="individualTask" />
+    <property name="individualWork" />
+    
+  </class>
+</hibernate-mapping>
